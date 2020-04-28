@@ -8,8 +8,9 @@
 \contentsline {subsection}{\numberline {3.1}Trapezoidal Rule}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Simpson's Rule}{7}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Diffraction Limit Of Telescope}{8}{subsubsection.3.2.1}%
-\contentsline {section}{\numberline {A}Plan Of Action}{9}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Objective}{9}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Resources}{9}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}General Path to be followed :}{9}{subsection.A.3}%
-\contentsline {section}{\numberline {B}Mid-Term Report}{10}{appendix.B}%
+\contentsline {subsection}{\numberline {3.3}Errors on Integrals}{10}{subsection.3.3}%
+\contentsline {section}{\numberline {A}Plan Of Action}{11}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Objective}{11}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Resources}{11}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}General Path to be followed :}{11}{subsection.A.3}%
+\contentsline {section}{\numberline {B}Mid-Term Report}{12}{appendix.B}%
