@@ -1,0 +1,61 @@
+\documentclass[]{article}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath,amsfonts}
+\renewcommand*\contentsname{Table Of Contents}
+%opening
+\title{\textbf{\huge Computational Physics}}
+\author[1]{ Vinit P. Doke}
+\affil[1]{{
+		Department of Physics\\ 
+		Indian Institute of Technology\\
+		Powai, Mumbai 400076 \\
+		{Email:} \texttt{vinitdoke@gmail.com , 190260018@iitb.ac.in
+		}.}
+}
+\date{{ Mentor: Chaitanya Kumar }}
+\pagestyle{headings}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,      
+	urlcolor=blue,
+}
+
+
+
+\begin{document}
+
+\input{title}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+
+\newpage
+\input{Introduction}
+\newpage
+\input{DataViz}
+\newpage
+\input{Integration}
+
+\newpage
+\appendix
+
+
+\section{Plan Of Action}
+\input{Plan_Of_Action}
+\newpage
+\section{Mid-Term Report}
+\input{MidTermReport}
+
+\end{document}

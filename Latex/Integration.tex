@@ -1,0 +1,57 @@
+\section{Integration}
+\label{sec:Int}
+\subsection{Trapezoidal Rule}
+We evaluate the integral for $f(x)$ in range $(a,b)$. One way would be to divide the range into $N$ slices like rectangles or trapezoids. As the name suggests, we approximate the function between $x_{i}$ and $x_{i+1}$ slices as a trapezium of $l1=f(x_{i})$ and $l2=f(x_{i+1})$ with separation  $h=(b-a)/N$, which will be same for all the trapeziums. Let the true value of the Integral be represented by $I$. Then the approximated integral is represented by $I_{0}$, given by:
+\[\begin{split}
+I_{0}&=\sum_{i=1}^{N}\dfrac{h}{2}[f(a+(i-1)h))+f(a+ih)] \\
+%&=\dfrac{h}{2}[f(a)+f(a+h)+f(a+h)+......f(b)]
+&=\dfrac{h}{2}[f(a)+f(b)+2(f(a+h))....2f(a+(N-1)h)]\\
+&= \dfrac{h}{2}[f(a)+f(b)+2\sum_{i=1}^{N-1}f(a+ih)]\\
+&\approx I\\
+\end{split}
+\]
+Naturally, we will have greater precision for higher values of N. Generally, we use Adaptive Integral Method (discussed here), to obtain results within the desired level of accuracy.
+\begin{lstlisting}[language=Python, caption=Trapezoidal Rule, frame=single, label={lst:L3} ]
+def f(x):
+	return x**4-2*x+1 #Function here
+N= #Number Of Divisions
+a= #start range
+b= #end range
+h=(b-a)/N
+integ=f(a)/2+f(b)/2
+for i in range(1,N):
+	integ+=f(a+i*h)
+integ*=h
+print(integ) #Final Solution
+\end{lstlisting}
+\subsection{Simpson's Rule}
+In Trapezoidal Rule, we approximate the curve by trapeziums, however we could fit a higher-order polynomial to our sliced function for better accuracy. Simpson's Rule does exactly that with polynomials of degree 2, i.e. Quadratic Expressions. We divide the range of $f(x)$, $(a,b)$ into $N$ equally spaced slices of width $h=(b-a)/N$. Let us consider 3 points, $\{-h,0,h\}$. The Quadratic polynomial passing through these points would be:
+ 
+\[	f(x)=ax^{2}+bx+c\]
+\[	f(-h)=ah^{2}-bh+c\]
+\[	f(0)=c\]
+\[	f(h)=ah^{2}+bh+c\]
+Solving for the coefficients gives us the constants $a,b,c$ in terms of $h$. Now, we integrate over the slice $[-h,h]$ as follows:
+\[\int_{-h}^{h}(ax^{2}+bx+c)dx=\dfrac{h}{3}[f(-h)+4f(0)+f(h)]  \]
+Performing this integral for all slices of form $x_{i-1},x_{i},x_{i+1}$ returns the general approximate integral $I_{0}$ as:
+\[\begin{split}
+I_{0}&=\dfrac{h}{3}[f(a)+f(b)+4\sum_{k=1}^{Odd}f(a+kh)+2\sum_{k=2}^{Even}f(a+kh)]\\
+&\approx I
+\end{split}\]
+Due to better order approximation, Simpson's rule generally yields more accurate results than the Trapezoidal rule in lesser steps ($N$). To obtain results within a specified degree of accuracy, we use the Adaptive Integral Method for Simpson's Rule (discussed here).
+\begin{lstlisting}[language=Python, caption=Simpson's Rule, frame=single, label={lst:L4} ]
+def f(x):
+	return x**4-2*x+1 #function here
+a= #start range
+b= #end range
+N= #Number of Divisions
+h=(b-a)/N
+s=f(a)+f(b)
+for i in range(1,N,2):
+	s+=4*f(a+i*h)
+for i in range(2,N-1,2):
+	s+=2*f(a+i*h)
+s=s*h/3 
+print(s)#Final Value
+\end{lstlisting}
+\subsubsection{Diffraction Limit Of Telescope}
