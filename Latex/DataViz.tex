@@ -2,6 +2,7 @@
 To make sense of the vast amounts of data, to study trends, patterns and various other characteristics, Visualisation serves as an indispensable tool. Data Viz. in itself is another vast domain of study, yet it has its uses in Physics. Graphs are fundamental in Physics followed by images and animations. Here, I deal with \textbf{Graphs, Density Plots, Scatter Plots and Images}.
 \subsection{Graphs}
 2D Graphs require datasets of points to be represented on a coordinate plane. One often encounters such datasets in Physics, having data regarding a dependent variable changing with an independent one. However, to plot functions, we need to evaluate them at a linear space of points between the required range to produce illusion of continuity. The computer draws straight-lines between the points. So the end-result is not smooth but a set of line-segments. However, sampling the functions at hundreds of such points enables the creation of smooth-looking curves.\medskip \\
+\subsubsection{Polar Plot}
 \par The underlying code plots functions of form $r=f(\theta)$, i.e. explicit in $r$ and $\theta$.
 \\
 \\ \\
@@ -40,6 +41,7 @@ plt.title(# Function Name)
 \end{figure}
 \subsection{Density Plots and Images}
 A \textbf{Density Plot} uses colours or brightness to represent magnitude on a 2D-Grid. In Python, we can pass an array of data, which can be 3D too. In this case, the values are interpreted as RGB values for each pixel in the grid. Consequently, many image formats are imported to Python in \textbf{3D-\textit{arrays}}. For instance, \textbf{FITS} (Flexible Image Transport System) is a widely used data format for storing astronomical observations by telescopes.\\
+\subsubsection{Interference Pattern}
 \par The underlying code displays the wave interference pattern for 2 plane waves produced in a medium at a particular separation.
 \begin{lstlisting}[language=Python, caption=Interfernce Pattern, frame=single, label={lst:L2} ]
 amp=1

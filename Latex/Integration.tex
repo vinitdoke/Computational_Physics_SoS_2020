@@ -10,7 +10,7 @@ I_{0}&=\sum_{i=1}^{N}\dfrac{h}{2}[f(a+(i-1)h))+f(a+ih)] \\
 &\approx I\\
 \end{split}
 \]
-Naturally, we will have greater precision for higher values of N. Generally, we use Adaptive Integral Method (discussed here), to obtain results within the desired level of accuracy.
+Naturally, we will have greater precision for higher values of N. Generally, we use Adaptive Integral Method (discussed \hyperref[subsec:3.4]{here}), to obtain results within the desired level of accuracy.
 \begin{lstlisting}[language=Python, caption=Trapezoidal Rule, frame=single, label={lst:L3} ]
 def f(x):
 	return x**4-2*x+1 #Function here
@@ -38,7 +38,7 @@ Performing this integral for all slices of form $x_{i-1},x_{i},x_{i+1}$ returns 
 I_{0}&=\dfrac{h}{3}[f(a)+f(b)+4\sum_{k=1}^{Odd}f(a+kh)+2\sum_{k=2}^{Even}f(a+kh)]\\
 &\approx I
 \end{split}\]
-Due to better order approximation, Simpson's rule generally yields more accurate results than the Trapezoidal rule in lesser steps ($N$). To obtain results within a specified degree of accuracy, we use the Adaptive Integral Method for Simpson's Rule (discussed here).
+Due to better order approximation, Simpson's rule generally yields more accurate results than the Trapezoidal rule in lesser steps ($N$). To obtain results within a specified degree of accuracy, we use the Adaptive Integral Method for Simpson's Rule (discussed \hyperref[subsec:3.4]{here}).
 \begin{lstlisting}[language=Python, caption=Simpson's Rule, frame=single, label={lst:L4} ]
 def f(x):
 	return x**4-2*x+1 #function here
@@ -126,6 +126,69 @@ plt.imshow(fp2,'cividis' ,vmax=mean+0.5*std, interpolation='bicubic')
 	\label{fig:diffractionpattern}
 \end{figure}
 \subsection{Errors on Integrals}
+The numerical integrals mentioned before were only approximations. Therefore, we are able to derive their approximation errors to get an idea of the precision involved.\\
+
+We define $x_{k}=a+kh$, a point to evaluate $f(x)$ at. Now Taylor expansion at $x_{k-1} $is given by:
+\[ f(x)= f(x_{k-1})+(x-x_{k-1})f^{'}(x_{k-1})+\dfrac{1}{2!}(x-x_{k-1})^{2}f^{"}(x_{k-1}) + ... \]
+\par Integrating $f(x)$ in range $[x_{k-1},x_{k}]$ gives:
+\[ \int_{x_{k-1}}^{x_{k}}f(x)\cdot dx = f(x_{k-1})\int_{x_{k-1}}^{x_{k}}dx + f^{'}(x_{k-1})\int_{x_{k-1}}^{x_{k}}(x-x_{k-1})\cdot dx +\dfrac{f^{"}(x_{k-1})}{2}\int_{x_{k-1}}^{x_{k}}(x-x_{k-1})^{2}\cdot dx + ....
+\]
+\par Substituting $u=x-x_{k-1}$ :
+\[ \begin{split}
+\int_{x_{k-1}}^{x_k} f(x)\cdot dx&=f(x_{k-1})\int_{0}^{h}du+f^{'}(x_{k-1})\int_{0}^{h}u\cdot du + \dfrac{f^{"}(x_{k-1})}{2}\int_{0}^{h}u^{2}\cdot du+ ....\\
+&=hf(x_{k-1})+\dfrac{h^{2}}{2}f^{'}(x_{k-1})+\dfrac{h^{3}}{6}f^{"}(x_{k-1})+O(h^{4})\\
+\end{split} \]
+\par where,  $O(h^{4})$ denotes the rest of the terms in the series, those in $h^{4}$ and higher.\\
+\par We can do similar expansion around $x=x_{k}$ and again integrate within the given range. Taking the average of the integrals in range $[x_{k-1},x_{k}]$ with Taylor expansions at both $x_{k-1} and x_{k}$ gives us:
+\[\int_{x_{k-1}}^{x_{k}}f(x)\cdot dx = \dfrac{h}{2}[f(x_{k-1})+f(x_k)]+\dfrac{h^2}{4}[f^{'}(x_{k-1})-f^{'}(x_k)]+\dfrac{h^3}{12}[f^{"}(x_{k-1})+f^{"}(x_k)]+O(h^4)
+\]
+\par Finally, we sum this expression over all slices $k$ to get the full integral that we want:
+\[\begin{split}
+\int_{a}^{b}f(x)\cdot dx& =\sum_{k=1}^{N}\int_{x_{k-1}}^{x_{k}}f(x)dx\\
+&=\dfrac{h}{2}\sum_{k=1}^{N}[f(x_{k-1})+f(x_{k})]+\dfrac{h^{2}}{4}[f^{'}(a)-f^{'}(b)]+\dfrac{h^{3}}{12}\sum_{k=1}^{N}[f^{"}(x_{k-1})+f^{"}(x_{k})]+O(h^{4})\\
+\end{split}
+\]
+\par Making the changes necessary to fit the above equation to the \textbf{Trapezoidal Rule} we have:
+\[\int_{a}^{b}f(x)\cdot dx = \dfrac{h}{2}\sum_{k=1}^{N}[f(x_{k-1})+f(x_{k})]+\dfrac{h^{2}}{12}[f^{'}(a)-f^{'}(b)] +O(h^{4})
+\]
+Thus, to leading order in h, the value of the terms dropped when we use the trapezoidal rule, which equals the approximation error $\epsilon$ on the integral is:
+\[ \epsilon=\dfrac{h^{2}}{12}[f^{'}(a)-f^{'}(b)]\]
+This is the \textit{Euler-Maclaurin formula} for the error on the trapezoidal rule. Similar operations for the \textbf{Simpson's Rule} yield:
+\[ \epsilon=\dfrac{h^{4}}{90}[f^{\prime\prime\prime}(a)-f^{\prime\prime\prime}(b)] \]
+For programming purposes, we use the numerical approach of calculating $\epsilon$ which is given as follows:
+\[\begin{split}
+\textbf{Trapezoidal Rule }&: \epsilon=\dfrac{1}{3}[I_{2}-I_{1}] \\
+\textbf{Simpson's Rule }&: \epsilon=\dfrac{1}{15}[I_{2}-I_{1}]
+ \end{split}
+ \]
+
+\subsection{Adaptive Integral Method}
+\label{subsec:3.4}
+This method utilises the numerical approach of calculating the errors. We begin by calculating an approximate integral $I_{1}$ with $N$ steps. Similarly $I_{2}$ is calculated with $2N$ steps. Then, the error will be given by:$$\epsilon=\dfrac{1}{3}[I_{2}-I_{1}]$$ Furthermore, If $\epsilon>\epsilon_{0}$, where $\epsilon_{0}$ is the degree of accuracy, we double the number of steps until $\epsilon<\epsilon_{0}$. This is implemented for the \textbf{Trapezoidal Rule} as follows:
+\begin{lstlisting}[language=Python, caption=Adaptive Rule, frame=single, label={lst:L7} ]
+def f(x):
+	return #Function here
+a= #Start Range
+b= #End Range
+thresh= #threshold
+error=1 #Seed Error
+N=1 #Repetitions
+I1=(f(a)+f(b))/2
+while error>thresh:
+	N=2*N
+	h=(b-a)/N
+	s=1/2*(f(a)+f(b))
+	for i in range(1,N):
+		s+=f(a+i*h)
+	I2=h*s
+	error=abs(1/3*(I2-I1))
+	I1=I2
+print(f'The value of integral is {I1} with error {error}')
+\end{lstlisting}
+\newpage
+\subsection{Romberg Integration}
+
+
 
 
 
