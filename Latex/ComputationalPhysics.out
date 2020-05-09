@@ -13,8 +13,14 @@
 \BOOKMARK [2][-]{subsection.3.3}{Errors on Integrals}{section.3}% 13
 \BOOKMARK [2][-]{subsection.3.4}{Adaptive Integral Method}{section.3}% 14
 \BOOKMARK [2][-]{subsection.3.5}{Romberg Integration}{section.3}% 15
-\BOOKMARK [1][-]{appendix.A}{Plan Of Action}{}% 16
-\BOOKMARK [2][-]{subsection.A.1}{Objective}{appendix.A}% 17
-\BOOKMARK [2][-]{subsection.A.2}{Resources}{appendix.A}% 18
-\BOOKMARK [2][-]{subsection.A.3}{General Path to be followed :}{appendix.A}% 19
-\BOOKMARK [1][-]{appendix.B}{Mid-Term Report}{}% 20
+\BOOKMARK [2][-]{subsection.3.6}{Gaussian Quadrature}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Sample Points}{subsection.3.6}% 17
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Gaussian Quadrature Implementation}{subsection.3.6}% 18
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Heat Capacity Of A Solid}{subsection.3.6}% 19
+\BOOKMARK [2][-]{subsection.3.7}{Integrals over Infinite Ranges}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.8}{Multiple Integrals}{section.3}% 21
+\BOOKMARK [1][-]{appendix.A}{Updated Plan Of Action}{}% 22
+\BOOKMARK [2][-]{subsection.A.1}{Objective}{appendix.A}% 23
+\BOOKMARK [2][-]{subsection.A.2}{Resources}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.3}{Completed Topics :}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.4}{Timeline for Post-Mid-Term:}{appendix.A}% 26

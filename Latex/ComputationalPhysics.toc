@@ -13,8 +13,14 @@
 \contentsline {subsection}{\numberline {3.3}Errors on Integrals}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Adaptive Integral Method}{11}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Romberg Integration}{12}{subsection.3.5}%
-\contentsline {section}{\numberline {A}Plan Of Action}{13}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Objective}{13}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Resources}{13}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}General Path to be followed :}{13}{subsection.A.3}%
-\contentsline {section}{\numberline {B}Mid-Term Report}{14}{appendix.B}%
+\contentsline {subsection}{\numberline {3.6}Gaussian Quadrature}{12}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Sample Points}{12}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Gaussian Quadrature Implementation}{13}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Heat Capacity Of A Solid}{13}{subsubsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.7}Integrals over Infinite Ranges}{14}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Multiple Integrals}{14}{subsection.3.8}%
+\contentsline {section}{\numberline {A}Updated Plan Of Action}{16}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Objective}{16}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Resources}{16}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Completed Topics :}{16}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Timeline for Post-Mid-Term:}{16}{subsection.A.4}%

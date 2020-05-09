@@ -187,6 +187,131 @@ print(f'The value of integral is {I1} with error {error}')
 \end{lstlisting}
 \newpage
 \subsection{Romberg Integration}
+The \textbf{Romberg Integration Formula} is :
+\[R_{i,m+1} = R_{i,m} + \dfrac{1}{4^{m}-1}(R_{i,m}-R_{i-1,m}) 
+\]
+which is accurate to order $h^{2m+1}$ with an error of order $h^{2m+2}$. The procedure is given as follows:
+\begin{enumerate}
+	\item Calculate first two estimates using \textbf{Trapezoidal Rule} :\\
+	 $I_{1}\equiv R_{1,1}$ and $I_{2}\equiv R_{2,1}$
+	 \item From these two, calculate the more accurate estimate: $R_{2,2}$
+	 \item Thus. for each estimate we also calculate the error to meet some desired accuracy.
+	
+\end{enumerate}
+\begin{center}
+
+
+\begin{tikzpicture}[node distance=2cm][H]
+% nodes
+
+\node (A) at (0, 0) {$R_{1,1}$};
+\node (B) at (0,-1 ) {$R_{2,1}$};
+\node (C) at (2,-1 ) {$R_{2,2}$};
+\node (D) at (0,-2 ) {$R_{3,1}$};
+\node (E) at (2,-2 ) {$R_{3,2}$};
+\node (F) at (4,-2 ) {$R_{3,3}$};
+
+% arrows
+\draw [->] (A)--(C);
+\draw [->] (C)--(F);
+\draw [->] (B)--(C);
+\draw [->] (B)--(E);
+\draw [->] (D)--(E);
+\draw [->] (E)--(F);
+\end{tikzpicture}
+\end{center}
+
+\subsection{Gaussian Quadrature}
+Until now, we had been using numerical methods that had evenly spaced point within the range. However, for functions with high variation in slope, we require higher number of points of evaluation in regions of higher variations of slope. Conversely, we do not require a lot of points for functions with lesser variation in slope. This dilemma is partly solved by the \textbf{Gaussian Quadrature} method.
+\par
+To calculate an approximation to our integral, we have:
+\[\begin{split}
+\int_{a}^{b}f(x)dx&\approx \int_{a}^{b}\Phi(x)dx=\int_{a}^{b}\sum_{k=1}^{N}f(x_{k})\phi_{k}(x)dx\\
+&=\sum_{k=1}^{N}f(x_{k})\int_{a}^{b}\phi_{k}(x)dx
+\end{split}\]
+\par Thus, we have weights $w_k$ given by:
+$$w_{k}=\int_{a}^{b}\phi_{k}(x)\cdot dx$$
+\par Often, we are given these weights for $a=-1$ and $b=+1$. These can be mapped to our new variables by the following equations:
+$$x_{k}^{\prime}=\dfrac{1}{2}(b-a)x_{k}+\dfrac{1}{2}(b+a)\\$$
+$$w_{k}^{\prime}=\dfrac{1}{2}(b-a)w_{k}$$
+\subsubsection{Sample Points}
+The sample points $x_{k}$ should be chosen to coincide with the zeros of the $N^{th}$ \textbf{Legendre Polynomial} $P_{N}(x)$, rescaled if necessary. The corresponding weights $w_{k}$ are:$$w_{k}=\left[\dfrac{2}{(1-x^{2})}\left(\dfrac{dP_{N}}{dx}\right)^{-2}\right]_{x=x_{k}}$$
+To obtain such points, I shall use the python program discussed in Appendix.
+\subsubsection{Gaussian Quadrature Implementation}
+\begin{lstlisting}[language=Python, caption=Gaussian Quadrature, frame=single, label={lst:L8} ]
+from gaussxw import gaussxwab #to obtain sample points and weights
+def f(x):
+	return #function here
+a= #Start Range
+b= #End Range
+N= #Iterations
+x,w=gaussxwab(N,a,b)
+integ=0
+for i in range(N):
+	integ+=f(x[i])*w[i]
+print(integ)
+\end{lstlisting}
+\subsubsection{Heat Capacity Of A Solid}
+\medskip
+\begin{displaymath}
+C_V = 9V\rho k_B \biggl( {T\over\theta_D} \biggr)^3 \int_0^{\theta_D/T}
+{ \dfrac{x^{4}e^x}{(e^x-1)^2} dx}
+\end{displaymath}
+\\
+\begin{lstlisting}[language=Python, caption=Heat Capacity, frame=single, label={lst:L9} ]
+V=10**(-3)
+ndensity=6.022*10**28
+debyetemp=428
+N=50
+k=1.38065852*10**(-23)
+x,w=gaussxw(N)
+def f(x):
+	return (x**4)*(np.exp(x))/(np.exp(x)-1)**2
+def cv(T):
+	a=0
+	b=debyetemp/T
+	integ=0
+	wk=(b-a)/2*w
+	xk=(b-a)/2*x+(b+a)/2
+	for i in range(N):
+		integ+=f(xk[i])*wk[i]
+	return 9*V*ndensity*k*((T/debyetemp)**3)*integ
+T=np.arange(5,501)
+C_val=[]
+for i in range(len(T)):
+	C_val.append(cv(T[i]))
+plt.figure(figsize=(10,5))
+plt.plot(T,C_val)
+plt.xlabel('Temp, K')
+plt.ylabel('C_V')
+plt.title('Heat Capacity Of Solid Al v/s Temp')
+\end{lstlisting}
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{heatcapacity}
+	\caption{OUTPUT for Listing \ref{lst:L9}}
+	\label{fig:heatcapacity}
+\end{figure}
+\subsection{Integrals over Infinite Ranges}
+We cannot possibly converge on an acceptable solution for integrals with infinite ranges by a numerical approach, since there are infinite slices. Therefore, what we require is a \textbf{change of variables}. To evaluate $\int_{0}^{\infty}f(x)dx$, we substitute $$z=\dfrac{x}{1+x}$$ Then, $$dx=\dfrac{dz}{(1-z)^{2}}$$ and $$\int_{0}^{\infty}f(x)dx=\int_{0}^{1}\dfrac{1}{(1-z)^{2}}f\left(\dfrac{z}{1-z}\right)dz$$
+\par Similar substitution for ranges like $(-\infty,0)$,$(a,\infty)$ etc. can be made. To evaluate in range $(-\infty,\infty)$, we divide the range at 0 and evaluate accordingly.
+
+\subsection{Multiple Integrals}
+To evaluate $$I= \int_{0}^{1}\int_{0}^{1}f(x,y)dx dy$$ We can re-write this by defining a function $F(y)$, thus $$F(y)=\int_{0}^{1}f(x,y)dx$$ Then, $$I=\int_{0}^{1}F(y)dy$$
+\par Similarly, for using the \textbf{Gaussian Quadrature}, we have the \textbf{\textit{Gauss-Legendre product formula}}:
+$$I\approx\sum_{i=1}^{N}\sum_{j=1}^{N}w_{i}w_{j}f(x_{i},y_{j})$$
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{multiplepoints}
+	\caption{Points of Evaluation for Gaussian Quadrature}
+	\label{fig:multiplepoints}
+\end{figure}
+
+
+
+
+
 
 
 
