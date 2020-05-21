@@ -19,8 +19,7 @@
 \contentsline {subsubsection}{\numberline {3.6.3}Heat Capacity Of A Solid}{13}{subsubsection.3.6.3}%
 \contentsline {subsection}{\numberline {3.7}Integrals over Infinite Ranges}{14}{subsection.3.7}%
 \contentsline {subsection}{\numberline {3.8}Multiple Integrals}{14}{subsection.3.8}%
-\contentsline {section}{\numberline {A}Updated Plan Of Action}{16}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Objective}{16}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Resources}{16}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Completed Topics :}{16}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Timeline for Post-Mid-Term:}{16}{subsection.A.4}%
+\contentsline {section}{\numberline {4}Random Processes and Monte-Carlo Methods}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Random Number Genarators}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Radioactive Decay Chain}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Brownian Motion}{18}{subsection.4.3}%
