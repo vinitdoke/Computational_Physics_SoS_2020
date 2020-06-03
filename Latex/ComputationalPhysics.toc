@@ -19,8 +19,14 @@
 \contentsline {subsubsection}{\numberline {3.6.3}Heat Capacity Of A Solid}{13}{subsubsection.3.6.3}%
 \contentsline {subsection}{\numberline {3.7}Integrals over Infinite Ranges}{14}{subsection.3.7}%
 \contentsline {subsection}{\numberline {3.8}Multiple Integrals}{14}{subsection.3.8}%
-\contentsline {section}{\numberline {4}Random Processes and Monte-Carlo Methods}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Random Number Genarators}{16}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Radioactive Decay Chain}{16}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Brownian Motion}{18}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Monte-Carlo Integration}{19}{subsection.4.4}%
+\contentsline {section}{\numberline {4}Ordinary Differential Equations}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Euler's Method}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Runge-Kutta Method (RK4)}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Simultaneous Ordinary Differential Equations}{18}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}The Lorenz Equations}{18}{subsubsection.4.3.1}%
+\contentsline {section}{\numberline {5}Random Processes and Monte-Carlo Methods}{20}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Random Number Genarators}{20}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Radioactive Decay Chain}{20}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Brownian Motion}{22}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Monte-Carlo Integration}{23}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Mean Value Method}{24}{subsection.5.5}%

@@ -91,7 +91,7 @@ for t in tpoints:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{../../../Images/RadioactiveDecay}
-	\caption{Output for Above Code}
+	\caption{Decay Graph}
 	\label{fig:radioactivedecay}
 \end{figure}
 \subsection{Brownian Motion}
@@ -129,6 +129,35 @@ plt.imshow(canvas)
 	\label{fig:randomwalk}
 \end{figure}
 \subsection{Monte-Carlo Integration}
+To integrate a function $f(x)$ in range $[a,b]$, with the maximum and minimum values $f_{max}$ and $f_{min}$, consider a rectangle enclosing the function, having area $A$. We choose at random, points inside the rectangle and check whether they fall within the are of the function. Then, the probability that a given point lies in the area is given $I\div A$. Let the probability be $P=K \div N$, where $K$ is number of points that fall within the area and $N$ is total number of points. Hence,
+$$I \approx \dfrac{K*A}{N}$$
+Following code outlines the way to obtain an integral for the function:
+$$f(x) = \sin^{2} \left(\dfrac{1}{x*(2-x)}\right),$$ in range $[0,2]$
+\begin{lstlisting}[language=Python, caption=Monte Carlo Integration, frame=single, label={lst:montecarlo} ]
+def f(x):
+	return (np.sin(1/(x*(2-x))))**2
+N=10000
+count=0
+A=2
+for i in range(N):
+	x=2*random.rand()
+	y=random.rand()
+	if y<f(x):
+		count+=1
+print(A*count/N)
+\end{lstlisting}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{MonteCarlo}
+	\caption{Random Points used to calculate Integral}
+	\label{fig:montecarlo}
+\end{figure}
+\subsection{Mean Value Method}
+The average value of $f(x)$ in range from $a$ to $b$ is by definition:
+$$\braket{f}= \dfrac{1}{b-a}\int_{a}^{b}f(x)dx=\dfrac{I}{b-a}$$
+Thus, $$I = (b-a)\braket{f}$$
+A simple way to estimate $\braket{f}$ is to measure $f(x)$ at $N$ points, chosen uniformly at random between $a$ and $b$. Then,
+$$I \approx \dfrac{b-a}{N}\sum_{i=1}^{N}f(x_{i})$$
 
 
 
