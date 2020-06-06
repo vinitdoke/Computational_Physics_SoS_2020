@@ -19,14 +19,16 @@
 \BOOKMARK [3][-]{subsubsection.3.6.3}{Heat Capacity Of A Solid}{subsection.3.6}% 19
 \BOOKMARK [2][-]{subsection.3.7}{Integrals over Infinite Ranges}{section.3}% 20
 \BOOKMARK [2][-]{subsection.3.8}{Multiple Integrals}{section.3}% 21
-\BOOKMARK [1][-]{section.4}{Ordinary Differential Equations}{}% 22
-\BOOKMARK [2][-]{subsection.4.1}{Euler's Method}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.2}{Runge-Kutta Method \(RK4\)}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.3}{Simultaneous Ordinary Differential Equations}{section.4}% 25
-\BOOKMARK [3][-]{subsubsection.4.3.1}{The Lorenz Equations}{subsection.4.3}% 26
-\BOOKMARK [1][-]{section.5}{Random Processes and Monte-Carlo Methods}{}% 27
-\BOOKMARK [2][-]{subsection.5.1}{Random Number Genarators}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.2}{Radioactive Decay Chain}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.3}{Brownian Motion}{section.5}% 30
-\BOOKMARK [2][-]{subsection.5.4}{Monte-Carlo Integration}{section.5}% 31
-\BOOKMARK [2][-]{subsection.5.5}{Mean Value Method}{section.5}% 32
+\BOOKMARK [1][-]{section.4}{Solutions Of Non-Linear Equations}{}% 22
+\BOOKMARK [2][-]{subsection.4.1}{Relaxation Method}{section.4}% 23
+\BOOKMARK [1][-]{section.5}{Ordinary Differential Equations}{}% 24
+\BOOKMARK [2][-]{subsection.5.1}{Euler's Method}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Runge-Kutta Method \(RK4\)}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.3}{Simultaneous Ordinary Differential Equations}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.3.1}{The Lorenz Equations}{subsection.5.3}% 28
+\BOOKMARK [1][-]{section.6}{Random Processes and Monte-Carlo Methods}{}% 29
+\BOOKMARK [2][-]{subsection.6.1}{Random Number Genarators}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.2}{Radioactive Decay Chain}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.3}{Brownian Motion}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.4}{Monte-Carlo Integration}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.5}{Mean Value Method}{section.6}% 34

@@ -1,15 +1,15 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Lorrenz Attractor\relax }}{1}{figure.caption.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Polar Plots\relax }}{5}{figure.caption.4}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$f(\theta )=e^{\qopname \relax o{cos}\theta }-2\qopname \relax o{cos}4\theta +\qopname \relax o{sin}^{5} \genfrac {}{}{}0{\theta }{12} $}}}{5}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$f(\theta )=\theta ^{2}$}}}{5}{subfigure.2.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces OUTPUT of Listing \ref {lst:L2}\relax }}{6}{figure.caption.5}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Plot of Bessel Functions\relax }}{9}{figure.caption.6}%
-\contentsline {figure}{\numberline {5}{\ignorespaces OUTPUT of Listing \ref {lst:L6}\relax }}{10}{figure.caption.7}%
-\contentsline {figure}{\numberline {6}{\ignorespaces OUTPUT for Listing \ref {lst:L9}\relax }}{14}{figure.caption.8}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Points of Evaluation for Gaussian Quadrature\relax }}{15}{figure.caption.9}%
-\contentsline {figure}{\numberline {8}{\ignorespaces $x(t), t\in (0,10)$\relax }}{16}{figure.caption.10}%
-\contentsline {figure}{\numberline {9}{\ignorespaces RK4 Method\relax }}{17}{figure.caption.11}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Lorenz Plot\relax }}{19}{figure.caption.12}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Decay Graph\relax }}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Random Walk}}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Random Points used to calculate Integral\relax }}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Polar Plots\relax }}{6}{figure.caption.4}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$f(\theta )=e^{\qopname \relax o{cos}\theta }-2\qopname \relax o{cos}4\theta +\qopname \relax o{sin}^{5} \genfrac {}{}{}0{\theta }{12} $}}}{6}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$f(\theta )=\theta ^{2}$}}}{6}{subfigure.2.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces OUTPUT of Listing \ref {lst:L2}\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Plot of Bessel Functions\relax }}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces OUTPUT of Listing \ref {lst:L6}\relax }}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces OUTPUT for Listing \ref {lst:L9}\relax }}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Points of Evaluation for Gaussian Quadrature\relax }}{16}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces $x(t), t\in (0,10)$\relax }}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces RK4 Method\relax }}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Lorenz Plot\relax }}{21}{figure.caption.12}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Decay Graph\relax }}{23}{figure.caption.13}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Random Walk}}{24}{figure.caption.14}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Random Points used to calculate Integral\relax }}{25}{figure.caption.15}%

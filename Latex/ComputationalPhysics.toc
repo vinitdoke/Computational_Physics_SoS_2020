@@ -1,32 +1,34 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Using Python}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Numerical Methods}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Data Visualisation}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Graphs}{4}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Polar Plot}{4}{subsubsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}Density Plots and Images}{5}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Interference Pattern}{5}{subsubsection.2.2.1}%
-\contentsline {section}{\numberline {3}Integration}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Trapezoidal Rule}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Simpson's Rule}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Diffraction Limit Of Telescope}{8}{subsubsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}Errors on Integrals}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Adaptive Integral Method}{11}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Romberg Integration}{12}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Gaussian Quadrature}{12}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Sample Points}{12}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Gaussian Quadrature Implementation}{13}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}Heat Capacity Of A Solid}{13}{subsubsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.7}Integrals over Infinite Ranges}{14}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Multiple Integrals}{14}{subsection.3.8}%
-\contentsline {section}{\numberline {4}Ordinary Differential Equations}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Euler's Method}{16}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Runge-Kutta Method (RK4)}{17}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Simultaneous Ordinary Differential Equations}{18}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}The Lorenz Equations}{18}{subsubsection.4.3.1}%
-\contentsline {section}{\numberline {5}Random Processes and Monte-Carlo Methods}{20}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Random Number Genarators}{20}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Radioactive Decay Chain}{20}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Brownian Motion}{22}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Monte-Carlo Integration}{23}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Mean Value Method}{24}{subsection.5.5}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Using Python}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Numerical Methods}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Data Visualisation}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Graphs}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Polar Plot}{5}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Density Plots and Images}{6}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Interference Pattern}{6}{subsubsection.2.2.1}%
+\contentsline {section}{\numberline {3}Integration}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Trapezoidal Rule}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Simpson's Rule}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Diffraction Limit Of Telescope}{9}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Errors on Integrals}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Adaptive Integral Method}{12}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Romberg Integration}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Gaussian Quadrature}{13}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Sample Points}{13}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Gaussian Quadrature Implementation}{14}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Heat Capacity Of A Solid}{14}{subsubsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.7}Integrals over Infinite Ranges}{15}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Multiple Integrals}{15}{subsection.3.8}%
+\contentsline {section}{\numberline {4}Solutions Of Non-Linear Equations}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Relaxation Method}{17}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Ordinary Differential Equations}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Euler's Method}{18}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Runge-Kutta Method (RK4)}{19}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Simultaneous Ordinary Differential Equations}{20}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}The Lorenz Equations}{20}{subsubsection.5.3.1}%
+\contentsline {section}{\numberline {6}Random Processes and Monte-Carlo Methods}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Random Number Genarators}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Radioactive Decay Chain}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Brownian Motion}{24}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Monte-Carlo Integration}{25}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Mean Value Method}{26}{subsection.6.5}%
