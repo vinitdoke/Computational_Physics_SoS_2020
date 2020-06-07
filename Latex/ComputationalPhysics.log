@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.7)  7 JUN 2020 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.7)  7 JUN 2020 17:24
 entering extended mode
 **./ComputationalPhysics.tex
 (ComputationalPhysics.tex
@@ -958,7 +958,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<cover2.pdf, id=150, 433.62pt x 650.43pt>
+<cover2.pdf, id=154, 433.62pt x 650.43pt>
 File: cover2.pdf Graphic file (type pdf)
 <use cover2.pdf>
 Package pdftex.def Info: cover2.pdf  used on input line 44.
@@ -967,7 +967,7 @@ File: cover2.pdf Graphic file (type pdf)
 <use cover2.pdf>
 Package pdftex.def Info: cover2.pdf  used on input line 44.
 (pdftex.def)             Requested size: 433.61894pt x 650.4284pt.
-<cover2.pdf, id=153, page=1, 433.62pt x 650.43pt>
+<cover2.pdf, id=157, page=1, 433.62pt x 650.43pt>
 File: cover2.pdf Graphic file (type pdf)
 <use cover2.pdf, page 1>
 Package pdftex.def Info: cover2.pdf , page1 used on input line 44.
@@ -1036,7 +1036,7 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line
 
 ("C:\Users\VINIT\AppData\Local\Programs\MiKTeX 2.9\tex/latex/calrsfs\omsrsfs.fd
 ")
-<lorenzattractor2.png, id=191, 853.1875pt x 552.0625pt>
+<lorenzattractor2.png, id=195, 853.1875pt x 552.0625pt>
 File: lorenzattractor2.png Graphic file (type png)
 <use lorenzattractor2.png>
 Package pdftex.def Info: lorenzattractor2.png  used on input line 7.
@@ -1100,7 +1100,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 ("C:\Users\VINIT\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ppl.fd"
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<FeyFunc.png, id=296, 462.528pt x 344.0052pt>
+<FeyFunc.png, id=301, 462.528pt x 344.0052pt>
 File: FeyFunc.png Graphic file (type png)
 <use FeyFunc.png>
 Package pdftex.def Info: FeyFunc.png  used on input line 36.
@@ -1113,7 +1113,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 36.
-<GalileanSpiral.png, id=298, 462.528pt x 344.0052pt>
+<GalileanSpiral.png, id=303, 462.528pt x 344.0052pt>
 File: GalileanSpiral.png Graphic file (type png)
 <use GalileanSpiral.png>
 Package pdftex.def Info: GalileanSpiral.png  used on input line 38.
@@ -1124,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
  []
 
 [7 <./FeyFunc.png> <./GalileanSpiral.png>]
-<WaveInterference.png, id=359, 462.528pt x 344.0052pt>
+<WaveInterference.png, id=364, 462.528pt x 344.0052pt>
 File: WaveInterference.png Graphic file (type png)
 <use WaveInterference.png>
 Package pdftex.def Info: WaveInterference.png  used on input line 80.
@@ -1142,13 +1142,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
  []
 
 [10]
-<BesselFunction.png, id=420, 462.528pt x 344.0052pt>
+<BesselFunction.png, id=425, 462.528pt x 344.0052pt>
 File: BesselFunction.png Graphic file (type png)
 <use BesselFunction.png>
 Package pdftex.def Info: BesselFunction.png  used on input line 97.
 (pdftex.def)             Requested size: 303.53267pt x 225.76335pt.
  [11 <./BesselFunction.png>]
-<DiffractionPattern.png, id=452, 462.528pt x 344.0052pt>
+<DiffractionPattern.png, id=457, 462.528pt x 344.0052pt>
 File: DiffractionPattern.png Graphic file (type png)
 <use DiffractionPattern.png>
 Package pdftex.def Info: DiffractionPattern.png  used on input line 124.
@@ -1202,25 +1202,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--261
  []
 
 [15]
-<heatcapacity.png, id=534, 722.7pt x 358.4592pt>
+<heatcapacity.png, id=539, 722.7pt x 358.4592pt>
 File: heatcapacity.png Graphic file (type png)
 <use heatcapacity.png>
 Package pdftex.def Info: heatcapacity.png  used on input line 292.
 (pdftex.def)             Requested size: 433.62pt x 215.07716pt.
-<multiplepoints.png, id=537, 462.528pt x 344.0052pt>
+<multiplepoints.png, id=542, 462.528pt x 344.0052pt>
 File: multiplepoints.png Graphic file (type png)
 <use multiplepoints.png>
 Package pdftex.def Info: multiplepoints.png  used on input line 306.
 (pdftex.def)             Requested size: 303.53267pt x 225.76335pt.
  [16 <./heatcapacity.png>]) [17 <./multiplepoints.png>] (NonLinear.tex)
 [18] (ODE.tex
-<Euler'sMethod.png, id=552, 462.528pt x 344.0052pt>
+<Euler'sMethod.png, id=557, 462.528pt x 344.0052pt>
 File: Euler'sMethod.png Graphic file (type png)
 <use Euler'sMethod.png>
 Package pdftex.def Info: Euler'sMethod.png  used on input line 25.
 (pdftex.def)             Requested size: 303.53267pt x 225.76335pt.
  [19 <./Euler'sMethod.png>]
-<RK4.png, id=574, 462.528pt x 344.0052pt>
+<RK4.png, id=579, 462.528pt x 344.0052pt>
 File: RK4.png Graphic file (type png)
 <use RK4.png>
 Package pdftex.def Info: RK4.png  used on input line 56.
@@ -1231,7 +1231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
  []
 
 [21]
-<LorenzPlot.png, id=621, 462.528pt x 344.0052pt>
+<LorenzPlot.png, id=626, 462.528pt x 344.0052pt>
 File: LorenzPlot.png Graphic file (type png)
 <use LorenzPlot.png>
 Package pdftex.def Info: LorenzPlot.png  used on input line 104.
@@ -1241,21 +1241,21 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
  [23]
-<../../../Images/RadioactiveDecay.png, id=665, 462.528pt x 344.0052pt>
+<../../../Images/RadioactiveDecay.png, id=670, 462.528pt x 344.0052pt>
 File: ../../../Images/RadioactiveDecay.png Graphic file (type png)
 <use ../../../Images/RadioactiveDecay.png>
 Package pdftex.def Info: ../../../Images/RadioactiveDecay.png  used on input li
 ne 93.
 (pdftex.def)             Requested size: 303.53267pt x 225.76335pt.
  [24 <../../../Images/RadioactiveDecay.png>]
-<../../../Images/RandomWalk.png, id=701, 462.528pt x 344.0052pt>
+<../../../Images/RandomWalk.png, id=706, 462.528pt x 344.0052pt>
 File: ../../../Images/RandomWalk.png Graphic file (type png)
 <use ../../../Images/RandomWalk.png>
 Package pdftex.def Info: ../../../Images/RandomWalk.png  used on input line 127
 .
 (pdftex.def)             Requested size: 303.53267pt x 225.76335pt.
  [25 <../../../Images/RandomWalk.png>]
-<MonteCarlo.png, id=732, 462.528pt x 344.0052pt>
+<MonteCarlo.png, id=737, 462.528pt x 344.0052pt>
 File: MonteCarlo.png Graphic file (type png)
 <use MonteCarlo.png>
 Package pdftex.def Info: MonteCarlo.png  used on input line 151.
@@ -1267,7 +1267,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `ComputationalPhysics.out' has not changed.
-(rerunfilecheck)             Checksum: 969359AEA7D2AF67F67581C624A60D30;2519.
+(rerunfilecheck)             Checksum: 025FF28A37239171D91ACD3A9822973B;2580.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1279,10 +1279,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 22978 strings out of 480931
- 419467 string characters out of 2899796
+ 22981 strings out of 480931
+ 419511 string characters out of 2899796
  851516 words of memory out of 3000000
- 37913 multiletter control sequences out of 15000+200000
+ 37915 multiletter control sequences out of 15000+200000
  579349 words of font info for 155 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,102p,621b,1906s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1301,9 +1301,9 @@ alatino/uplbi8a.pfb><C:/Users/VINIT/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/urw/palatino/uplr8a.pfb><C:/Users/VINIT/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/urw/palatino/uplr8a.pfb><C:/Users/VINIT/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ComputationalPhysics.pdf (28 pages, 1221741 bytes).
+Output written on ComputationalPhysics.pdf (28 pages, 1222504 bytes).
 PDF statistics:
- 883 PDF objects out of 1000 (max. 8388607)
- 413 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 888 PDF objects out of 1000 (max. 8388607)
+ 414 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 
