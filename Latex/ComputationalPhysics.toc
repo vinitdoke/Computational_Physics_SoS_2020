@@ -33,5 +33,6 @@
 \contentsline {subsection}{\numberline {6.4}Monte-Carlo Integration}{26}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Mean Value Method}{27}{subsection.6.5}%
 \contentsline {section}{\numberline {A}Final Remarks}{28}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Python Scripts on GitHub}{28}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}References}{28}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.1}Learning Outcomes}{28}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Python Scripts on GitHub}{28}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}References}{28}{subsection.A.3}%
