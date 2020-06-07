@@ -16,6 +16,7 @@
 \usepackage{fancyvrb}
 \usepackage{tikz}
 \usepackage{braket}
+\usepackage{pdfpages}
 \renewcommand*\contentsname{Table Of Contents}
 %opening
 \title{\textbf{\huge Computational Physics} \\ Summer Of Science 2020}
@@ -39,6 +40,9 @@
 
 
 \begin{document}
+	 
+		\includepdf[fitpaper=true, pages=-]{cover2.pdf}
+	
 
 \input{title}
 
@@ -65,6 +69,7 @@
 
 \newpage
 \appendix
+\input{Final}
 
 
 %\section{Updated Plan Of Action}
