@@ -129,7 +129,7 @@ plt.imshow(canvas)
 	\label{fig:randomwalk}
 \end{figure}
 \subsection{Monte-Carlo Integration}
-To integrate a function $f(x)$ in range $[a,b]$, with the maximum and minimum values $f_{max}$ and $f_{min}$, consider a rectangle enclosing the function, having area $A$. We choose at random, points inside the rectangle and check whether they fall within the are of the function. Then, the probability that a given point lies in the area is given $I\div A$. Let the probability be $P=K \div N$, where $K$ is number of points that fall within the area and $N$ is total number of points. Hence,
+To integrate a function $f(x)$ in range $[a,b]$, with the maximum and minimum values $f_{max}$ and $f_{min}$, consider a rectangle enclosing the function, having area $A$. We choose at random, points inside the rectangle and check whether they fall within the area of the function. Then, the probability that a given point lies in the area is given $I\div A$. Let the probability be $P=K \div N$, where $K$ is number of points that fall within the area and $N$ is total number of points. Hence,
 $$I \approx \dfrac{K*A}{N}$$
 Following code outlines the way to obtain an integral for the function:
 $$f(x) = \sin^{2} \left(\dfrac{1}{x*(2-x)}\right),$$ in range $[0,2]$

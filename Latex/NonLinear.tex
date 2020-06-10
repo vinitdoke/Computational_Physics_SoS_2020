@@ -1,2 +1,14 @@
 \section{Solutions Of Non-Linear Equations}
 \subsection{Relaxation Method}
+To solve for the value of a single variable, we rearrange the equation to form $x = f(x)$. Then, $$x_{1}=f(x_{0})\\$$
+$$x_{2}=f(x_{1}) \\$$
+$$x_{3}=f(x_{2})$$
+and so on.. Simultaneously, we find the difference between consecutives $x_{i}$ and $x_{i+1}$. If the values appear to converge to a solution or the consecutive differences reach magnitudes lesser than the desired accuracy, we have found a root for $x-f(x)=0$. This is known as the \textbf{Relaxation Method}. 
+\subsection{Bisection Method}
+Assuming a continuous and smooth function $f(x)$, we choose initial values $x_{1}$ and $x_{2}$ such that $f(x_{1})$ and $f(x_{2})$ are of opposite sign. This guarantees that $x_{1}$ and $x_{2}$ bracket at least one solution. Now, we evaluate $f(x_{3})=f\left(\dfrac{x_{1}+x_{2}}{2}\right)$ and reassign $x_{3}$ to the initial variables such that we have variables of opposite signs. This shortens the region of the possible solution, with increasing accuracy. Consequently, we terminate the loop when the length of the region $x_{2}-x_{1}$ is less than required accuracy $\epsilon$ .
+\subsection{Other Methods:}
+\begin{itemize}
+	\item Newton-Raphson Method
+	\item Secant Method
+	\item Gradient Descent
+\end{itemize}

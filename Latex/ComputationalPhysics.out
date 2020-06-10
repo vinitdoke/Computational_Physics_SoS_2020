@@ -21,18 +21,20 @@
 \BOOKMARK [2][-]{subsection.3.8}{Multiple Integrals}{section.3}% 21
 \BOOKMARK [1][-]{section.4}{Solutions Of Non-Linear Equations}{}% 22
 \BOOKMARK [2][-]{subsection.4.1}{Relaxation Method}{section.4}% 23
-\BOOKMARK [1][-]{section.5}{Ordinary Differential Equations}{}% 24
-\BOOKMARK [2][-]{subsection.5.1}{Euler's Method}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.2}{Runge-Kutta Method \(RK4\)}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.3}{Simultaneous Ordinary Differential Equations}{section.5}% 27
-\BOOKMARK [3][-]{subsubsection.5.3.1}{The Lorenz Equations}{subsection.5.3}% 28
-\BOOKMARK [1][-]{section.6}{Random Processes and Monte-Carlo Methods}{}% 29
-\BOOKMARK [2][-]{subsection.6.1}{Random Number Genarators}{section.6}% 30
-\BOOKMARK [2][-]{subsection.6.2}{Radioactive Decay Chain}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.3}{Brownian Motion}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.4}{Monte-Carlo Integration}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.5}{Mean Value Method}{section.6}% 34
-\BOOKMARK [1][-]{appendix.A}{Final Remarks}{}% 35
-\BOOKMARK [2][-]{subsection.A.1}{Learning Outcomes}{appendix.A}% 36
-\BOOKMARK [2][-]{subsection.A.2}{Python Scripts on GitHub}{appendix.A}% 37
-\BOOKMARK [2][-]{subsection.A.3}{References}{appendix.A}% 38
+\BOOKMARK [2][-]{subsection.4.2}{Bisection Method}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.3}{Other Methods:}{section.4}% 25
+\BOOKMARK [1][-]{section.5}{Ordinary Differential Equations}{}% 26
+\BOOKMARK [2][-]{subsection.5.1}{Euler's Method}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.2}{Runge-Kutta Method \(RK4\)}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.3}{Simultaneous Ordinary Differential Equations}{section.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.3.1}{The Lorenz Equations}{subsection.5.3}% 30
+\BOOKMARK [1][-]{section.6}{Random Processes and Monte-Carlo Methods}{}% 31
+\BOOKMARK [2][-]{subsection.6.1}{Random Number Genarators}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.2}{Radioactive Decay Chain}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.3}{Brownian Motion}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.4}{Monte-Carlo Integration}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.5}{Mean Value Method}{section.6}% 36
+\BOOKMARK [1][-]{appendix.A}{Final Remarks}{}% 37
+\BOOKMARK [2][-]{subsection.A.1}{Learning Outcomes}{appendix.A}% 38
+\BOOKMARK [2][-]{subsection.A.2}{Python Scripts on GitHub}{appendix.A}% 39
+\BOOKMARK [2][-]{subsection.A.3}{References}{appendix.A}% 40
